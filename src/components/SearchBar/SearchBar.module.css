@@ -1,0 +1,15 @@
+.SearchBar {
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid #707070 0.3px;
+    border-radius: 50px;
+}
+
+.SearchBar input {
+    border: none;
+}

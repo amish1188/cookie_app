@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom';
 
-import Cookies from './containers/Cookies/Cookies';
+import CookiesMenu from './containers/CookiesMenu/CookiesMenu';
 
 class App extends Component {
   state ={}
@@ -9,7 +9,7 @@ class App extends Component {
   render(){
     return(
       <Switch>
-        <Route path='/cookies' exact component={Cookies}></Route>
+        <Route path='/cookies' exact component={CookiesMenu}></Route>
       </Switch>
     )
   }
