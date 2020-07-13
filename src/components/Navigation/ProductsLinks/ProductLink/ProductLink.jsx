@@ -2,10 +2,10 @@ import React from 'react';
 
 import classes from './ProductLink.module.css';
 
-const ProductLink = () => {
+const ProductLink = (props) => {
     return(
         <div className={classes.ProductLink}>
-            <p>ProductLink </p>
+            <p>{props.children}</p>
         </div>
     )
 };

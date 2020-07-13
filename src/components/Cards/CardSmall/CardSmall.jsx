@@ -1,8 +1,10 @@
 import React from 'react';
 
+import classes from './CardSmall.module.css';
+
 const CardSmall = () => {
     return(
-        <div>Card Small</div>
+        <div className={classes.CardSmall}></div>
     )
 };
 

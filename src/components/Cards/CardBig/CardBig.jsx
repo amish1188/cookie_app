@@ -1,8 +1,10 @@
 import React from 'react';
 
+import classes from './CardBig.module.css';
+
 const CardBig = () => {
     return(
-        <div>Card Big</div>
+        <div className={classes.CardBig}></div>
     )
 };
 

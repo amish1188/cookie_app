@@ -8,12 +8,9 @@ import ProductLinksBar from '../../components/Navigation/ProductsLinks/ProductLi
 class CookiesMenu extends Component {
     render() {
         return(
-            <React.Fragment>
-                <Header />
-                <SearchBar />
-                <ProductLinksBar />
+            
                 <MenuViewer />
-            </React.Fragment>
+            
         )
     }
 }

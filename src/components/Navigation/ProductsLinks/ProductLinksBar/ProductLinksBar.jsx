@@ -6,9 +6,9 @@ import classes from './ProductLinksBar.module.css';
 const ProductLinksBar = () => {
     return(
         <div className={classes.ProductLinksBar}> 
-            <ProductLink />
-            <ProductLink />
-            <ProductLink />
+            <ProductLink>Cookies</ProductLink>
+            <ProductLink>Cupcakes</ProductLink>
+            <ProductLink>Boxes</ProductLink>
             <div className={classes.Line}></div>
         </div>
     )
