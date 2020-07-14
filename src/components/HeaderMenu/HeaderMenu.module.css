@@ -1,7 +1,7 @@
-.Header {
+.HeaderMenu {
     width: 85%;
     display: flex;
     margin: auto;
-    padding: 10px;
+    
     justify-content: space-between;
 }

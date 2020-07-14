@@ -2,9 +2,9 @@ import React from 'react';
 
 import classes from './CardBig.module.css';
 
-const CardBig = () => {
+const CardBig = (props) => {
     return(
-        <div className={classes.CardBig}></div>
+        <div style={{backgroundColor: props.color}} className={classes.CardBig}></div>
     )
 };
 

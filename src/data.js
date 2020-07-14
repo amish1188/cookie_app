@@ -1,0 +1,1 @@
+export const cookies = ['brownie', 'chocolate', 'vanila', 'coconut'];
