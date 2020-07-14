@@ -1,6 +1,5 @@
 .MenuViewer {
     width: 100%;
-    min-height: 540px;
     background-color: #F8F8F8;
     display: flex;
     flex-wrap: wrap;

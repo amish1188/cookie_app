@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Row from '../../components/Layout/Row/Row';
+import Row from '../Row/Row';
 import classes from './MenuViewer.module.css';
 
 const MenuViewer = () => {

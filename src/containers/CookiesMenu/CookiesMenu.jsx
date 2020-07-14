@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
-import Header from '../../components/Header/Header';
-import SearchBar from '../../components/SearchBar/SearchBar';
-import MenuViewer from '../MenuViewer/MenuViewer';
-import ProductLinksBar from '../../components/Navigation/ProductsLinks/ProductLinksBar/ProductLinksBar';
-
+import MenuViewer from '../../components/Layout/MenuViewer/MenuViewer';
 class CookiesMenu extends Component {
     render() {
         return(
