@@ -22,8 +22,8 @@ const MenuViewer = (props) => {
     return(
         
             <div className={classes.MenuViewer}>
-                <Row position={true}/>
-                <Row position={false}/>
+                <Row position={true} products={firstRowItems}/>
+                <Row position={false} products={secondRowItems}/>
             </div>
         
     )

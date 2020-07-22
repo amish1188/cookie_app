@@ -4,14 +4,19 @@ import axios from 'axios';
 import MenuViewer from '../../components/Layout/MenuViewer/MenuViewer';
 class CookiesMenu extends Component {
     state = {
-        cookies: []
+        cookies: null
     };
 
     componentDidMount() {
         axios.get('https://cookie-app-80b62.firebaseio.com/cookies.json')
         .then(response => {
-                this.setState({cookies: response.data})
-                console.log(this.state.cookies);
+                const modifiedCookies = response.data;
+                modifiedCookies.forEach(item => {
+                    if(item.price >= 1){item.price = '$ ' + item.price + '.00'}
+                    else{item.price = '$ ' + item.price + '0'}
+                })
+                this.setState({cookies: modifiedCookies})
+                console.log(modifiedCookies);
             });
     };
 

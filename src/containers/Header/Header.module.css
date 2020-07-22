@@ -4,4 +4,5 @@
     position: fixed;
     background-color: #FCFCFC;
     padding-top: 20px;
+    z-index: 200;
 }
