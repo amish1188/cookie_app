@@ -16,7 +16,7 @@ class CookiesMenu extends Component {
                     else{item.price = '$ ' + item.price + '0'}
                 })
                 this.setState({cookies: modifiedCookies})
-                console.log(modifiedCookies);
+                console.log('mounted');
             });
     };
 

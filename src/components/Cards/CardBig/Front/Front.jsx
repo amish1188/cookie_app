@@ -1,7 +1,7 @@
 import React from 'react';
 
 import classes from './Front.module.css';
-import AddButtonCard from '../../../UI/Buttons/AddButtonCard';
+import AddButtonCard from '../../../UI/Buttons/AddButtonCard/AddButtonCard';
 
 const Front = (props) => {
 

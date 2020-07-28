@@ -8,8 +8,10 @@ import classes from './Row.module.css';
 const Row = (props) => {
    
     const colorsLeft = ['#FFDAC1', '#FEB7B2', '#D8F4AF'];
+    const colorsLeftDark = ['#C9611A', '#C9611A', '#C9611A'];
     let indexNumLeft = -1;
     const colorsRight = ['#C8CFEA', '#B5EBD7', '#FADE9D'];
+    const colorsRightDark = ['#3D6054', '#3D6054', '#3D6054'];
     let indexNumRight = 0;
 
     let row;
@@ -22,6 +24,7 @@ const Row = (props) => {
                     <CardBig 
                         key={cookie.name}
                         color={colorsLeft[indexNumLeft]} 
+                        colorDark={colorsLeftDark[indexNumLeft]}
                         name={cookie.name}
                         desc={cookie.desc}
                         price={cookie.price}
@@ -39,6 +42,7 @@ const Row = (props) => {
                         <CardBig 
                             key={cookie.name}
                             color={colorsRight[indexNumRight]} 
+                            colorDark={colorsRightDark[indexNumRight]}
                             name={cookie.name}
                             desc={cookie.desc}
                             price={cookie.price}

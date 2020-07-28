@@ -1,0 +1,18 @@
+.BackContainer {
+    width: 80%;
+    height: 80%;
+    margin:30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+.CloseButtonPosition {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
