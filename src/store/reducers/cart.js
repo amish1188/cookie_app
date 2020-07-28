@@ -1,4 +1,4 @@
-import * as actionTypes from './actions';
+import * as actionTypes from '../actions/cart';
 
 const initialState = {
     sum: 0

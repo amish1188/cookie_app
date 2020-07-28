@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import reducer from './store/reducers/reducer';
+import reducer from './store/reducers/cart';
 
 const store = createStore(reducer);
 
