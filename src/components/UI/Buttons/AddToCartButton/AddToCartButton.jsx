@@ -6,7 +6,7 @@ const AddToCartButton = (props) => (
     <button 
         style={{width: props.width, height: props.height, backgroundColor: props.color}}
         className={classes.Button}
-        click={props.click}>
+        onClick={props.click}>
             {props.children}
     </button>
 );

@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, combineReducers, compose } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
-import reducer from './store/reducers/cart';
+import cartReducer from './store/reducers/cart';
 
-const store = createStore(reducer);
+const rootReducer = combineReducers({
+  cart: cartReducer
+})
+
+
+const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ &&window.__REDUX_DEVTOOLS_EXTENSION__ ());
 
 const app = (
   <Provider store={store}>

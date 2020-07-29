@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import classes from './CardBig.module.css';
 import Front from './Front/Front';
@@ -31,6 +32,14 @@ class CardBig extends Component {
         }
     }
 
+    addProductToCart = () => {
+        const product = {name: this.props.name,price: this.props.price, img: this.props.url, quantity: this.state.productAdded}
+        this.props.addProductToCart(product)
+        if(this.props.products>0){
+
+            console.log(this.props.products);
+        }
+    }
 
     render() {
         let cardContent;
@@ -48,10 +57,11 @@ class CardBig extends Component {
             <Back 
                 add={this.AddOne}
                 remove={this.RemoveOne}
-                number={this.state.productAdded}
+                quantity={this.state.productAdded}
                 color={this.props.color}
                 colorDark={this.props.colorDark}
                 click={this.OpenToAdd}
+                addToCart={this.addProductToCart}
             />
         }
         return(
@@ -62,4 +72,17 @@ class CardBig extends Component {
     }
 }; 
 
-export default CardBig;
+const mapStateToProps = state => {
+    return{
+        sum: state.cart.sum,
+        products: state.cart.products
+    };
+};
+
+const mapDispatchToProps = dispatch => {
+    return{
+        addProductToCart: (product) => dispatch({type: 'ADD_TO_CART', product: product })
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CardBig);

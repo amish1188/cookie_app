@@ -13,12 +13,13 @@ const Back = (props) => {
             </div>
             <div className={classes.BackContainer}>
                 <AddProductButton color={props.color} click={props.add}>+</AddProductButton>
-                <div className={classes.Number}>{props.number}</div>
+                <div className={classes.Number}>{props.quantity}</div>
                 <AddProductButton color={props.color} click={props.remove}>-</AddProductButton>
                 <AddToCartButton
+                    click={props.addToCart}
                     width={'70%'}
                     height={'20%'}
-                    color={props.number > 0 ? props.colorDark : '#B4B4B4'}>
+                    color={props.quantity > 0 ? props.colorDark : '#B4B4B4'}>
                         Add
                 </AddToCartButton>
             </div>   
