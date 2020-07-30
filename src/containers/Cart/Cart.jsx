@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import CardCart from '../../components/Cards/CardCart/CardCart';
+import classes from './Cart.module.css';
+
 class Cart extends Component {
     state = {  }
     render() {
         return (
-        <div>this is cart</div>
+            <div className={classes.CartContainer}>
+                {this.props.products.map((item) => {
+                    return(
+                        <CardCart 
+                            name={item.name}
+                            price={item.price}/>
+                    )
+                })}
+            </div>
         );
     };
 };
