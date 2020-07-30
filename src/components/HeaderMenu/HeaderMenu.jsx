@@ -5,7 +5,7 @@ import SideDrawer from '../Navigation/SideDrawer/SideDrawer';
 import classes from './HeaderMenu.module.css';
 
 
-const Header = () => {
+const HeaderMenu = () => {
     return(
         <div className={classes.HeaderMenu}>
             <Logo />
@@ -14,4 +14,4 @@ const Header = () => {
     )
 };
 
-export default Header;
+export default HeaderMenu;

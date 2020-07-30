@@ -5,7 +5,7 @@ class Cart extends Component {
     state = {  }
     render() {
         return (
-        <div><p>{this.props.sum}</p><p>{this.props.products}</p></div>
+        <div>this is cart</div>
         );
     };
 };

@@ -1,7 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { Link}  from 'react-router-dom';
 
 import Row from '../Row/Row';
+import FloatingActionButton from '../../UI/FloatingActionButton/FloatingActionButton';
 import classes from './MenuViewer.module.css';
+
 
 const MenuViewer = (props) => {
 
@@ -24,9 +28,18 @@ const MenuViewer = (props) => {
             <div className={classes.MenuViewer}>
                 <Row position={true} products={firstRowItems}/>
                 <Row position={false} products={secondRowItems}/>
+                <Link to="/cart">
+                    <FloatingActionButton sum={props.sum}/>
+                </Link>
             </div>
         
     )
 };
 
-export default MenuViewer;
+const mapStateToProps = state => {
+    return{
+        sum: state.cart.sum
+    }
+};
+
+export default connect(mapStateToProps)(MenuViewer);

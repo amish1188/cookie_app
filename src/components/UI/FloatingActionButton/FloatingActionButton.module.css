@@ -1,0 +1,12 @@
+.FloatingActionButton {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    width: 190px;
+    height: 50px;
+    background-color: aqua;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 22px 0 0 22px;
+    background-image:  linear-gradient(#F7A9BD,#E889A2);
+}

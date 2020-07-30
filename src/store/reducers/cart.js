@@ -1,8 +1,8 @@
 import * as actionTypes from '../actions/cart';
 
 const initialState = {
-    sum: 0,
-    products: []
+    products: [],
+    sum: 0
 };
 
 const reducer = (state = initialState, action) => {
@@ -10,11 +10,12 @@ const reducer = (state = initialState, action) => {
         case 'ADD_TO_CART':
             return{
                 ...state,
-                sum: state.sum + action.product.quantity,
-                products: state.products.concat(action.product)
-            }
-    }
-    return state;
+                products: state.products.concat(action.product),
+                sum: state.sum + (action.product.price * action.product.quantity)
+            };
+           
+        }
+        return state;
 };
 
 export default reducer;

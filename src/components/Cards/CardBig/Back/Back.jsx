@@ -16,7 +16,7 @@ const Back = (props) => {
                 <div className={classes.Number}>{props.quantity}</div>
                 <AddProductButton color={props.color} click={props.remove}>-</AddProductButton>
                 <AddToCartButton
-                    click={props.addToCart}
+                    click={() => {props.addToCart(); props.click()}}
                     width={'70%'}
                     height={'20%'}
                     color={props.quantity > 0 ? props.colorDark : '#B4B4B4'}>

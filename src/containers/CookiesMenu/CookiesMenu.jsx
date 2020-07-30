@@ -11,12 +11,7 @@ class CookiesMenu extends Component {
         axios.get('https://cookie-app-80b62.firebaseio.com/cookies.json')
         .then(response => {
                 const modifiedCookies = response.data;
-                modifiedCookies.forEach(item => {
-                    if(item.price >= 1){item.price = '$ ' + item.price + '.00'}
-                    else{item.price = '$ ' + item.price + '0'}
-                })
                 this.setState({cookies: modifiedCookies})
-                console.log('mounted');
             });
     };
 
