@@ -9,13 +9,13 @@ const initialState = {
 const addProduct = (state,action) => {
     const index = state.products.findIndex(p => p.name === action.product.name);
     if(index < 0){
-        return{ ...state, products: state.products.concat(action.product)}
+        return{ ...state, products: state.products.concat(action.product), sum: state.sum + (action.product.quantity * action.product.price)}
     } else{
         const product = {...state.products[index]};
         product.quantity += action.product.quantity;
         const products = [...state.products];
         products[index] = product;
-        return {...state, products: products}
+        return {...state, products: products,  sum: state.sum + (action.product.quantity * action.product.price)}
     }
 }
 

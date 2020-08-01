@@ -7,16 +7,28 @@ import classes from './Cart.module.css';
 class Cart extends Component {
     state = {  }
     render() {
-        return (
+        console.log(this.props.products);
+        let content;
+        this.props.products.length > 0 ? content =  
             <div className={classes.CartContainer}>
                 {this.props.products.map((item) => {
                     return(
                         <CardCart 
                             name={item.name}
-                            price={item.price}/>
+                            url={item.url}
+                            price={item.price} 
+                            backgroundColor={item.backgroundColor} />
                     )
                 })}
+            </div> :
+        content = 
+            <div className={classes.CartContainer}>
+                <p>Cart is Empty</p>
             </div>
+        return (
+            <React.Fragment>
+                {content}
+            </React.Fragment>
         );
     };
 };

@@ -17,6 +17,7 @@ const HeaderMenu = () => {
         </div> :
         <div className={classes.HeaderMenu}>
             <Logo />
+            <Link to='/cart'>cart</Link>
             <SideDrawer />
         </div>
 

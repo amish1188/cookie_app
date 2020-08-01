@@ -1,4 +1,23 @@
 .CardCart {
     width: 80%;
     height: 10%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.CardCart img {
+    height: 50px;
+}
+
+.CardCart p {
+    font-size: 13px;
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

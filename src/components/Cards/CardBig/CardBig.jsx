@@ -14,7 +14,8 @@ class CardBig extends Component {
     
     OpenToAdd = () => {
         this.setState(prevState => ({
-            clicked: !prevState.clicked
+            clicked: !prevState.clicked,
+            productAdded: 1
         }));
     }
 
@@ -33,7 +34,13 @@ class CardBig extends Component {
     }
 
     addProductToCart = () => {
-        const product = {name: this.props.name,price: this.props.price, img: this.props.url, quantity: this.state.productAdded}
+        const product = {
+            name: this.props.name,
+            price: this.props.price, 
+            url: this.props.url, 
+            quantity: this.state.productAdded,
+            backgroundColor: this.props.color
+        }
         this.props.addProductToCart(product)
         if(this.props.products>0){
 
