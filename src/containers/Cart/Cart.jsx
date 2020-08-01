@@ -17,7 +17,9 @@ class Cart extends Component {
                             name={item.name}
                             url={item.url}
                             price={item.price} 
-                            backgroundColor={item.backgroundColor} />
+                            backgroundColor={item.color}
+                            colorDark={item.colorDark}
+                            quantity={item.quantity} />
                     )
                 })}
             </div> :

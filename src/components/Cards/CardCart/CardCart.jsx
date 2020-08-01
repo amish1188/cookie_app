@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Counter from '../../UI/Counter/Counter';
 import classes from './CardCart.module.css';
 
 class CardCart extends Component {
@@ -11,6 +12,11 @@ class CardCart extends Component {
                     <p>{this.props.name}</p>
                     <p>{this.props.price}</p>
                 </div>
+                <Counter 
+                    color={this.props.backgroundColor}
+                    quantity={this.props.quantity}
+                    colorDark={this.props.colorDark}
+                    />
             </div>
         )
     }

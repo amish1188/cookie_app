@@ -39,7 +39,8 @@ class CardBig extends Component {
             price: this.props.price, 
             url: this.props.url, 
             quantity: this.state.productAdded,
-            backgroundColor: this.props.color
+            color: this.props.color,
+            colorDark: this.props.colorDark
         }
         this.props.addProductToCart(product)
         if(this.props.products>0){

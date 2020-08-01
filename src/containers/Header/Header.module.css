@@ -6,3 +6,10 @@
     padding-top: 20px;
     z-index: 200;
 }
+
+.Header2 {
+    width: 100%;
+    min-height: 10vh;
+    background-color: #FCFCFC;
+    padding-top: 20px;
+}

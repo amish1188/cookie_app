@@ -8,7 +8,7 @@ import classes from './Row.module.css';
 const Row = (props) => {
    
     const colorsLeft = ['#FFDAC1', '#FEB7B2', '#D8F4AF'];
-    const colorsLeftDark = ['#C9611A', '#C9611A', '#C9611A'];
+    const colorsLeftDark = ['#C9611A', '#B74942', '##67902B'];
     let indexNumLeft = -1;
     const colorsRight = ['#C8CFEA', '#B5EBD7', '#FADE9D'];
     const colorsRightDark = ['#3D6054', '#3D6054', '#3D6054'];

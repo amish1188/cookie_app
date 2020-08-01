@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
 
 import HeaderMenu from '../../components/HeaderMenu/HeaderMenu';
 import SearchBar from '../../components/SearchBar/SearchBar';
@@ -15,7 +15,7 @@ const Header = () => {
             <SearchBar />
             <ProductLinksBar />
         </div> :
-        <div className={classes.Header}>
+        <div className={classes.Header2}>
             <HeaderMenu />
         </div>
 

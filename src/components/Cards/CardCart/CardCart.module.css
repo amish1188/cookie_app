@@ -1,11 +1,13 @@
 .CardCart {
     width: 80%;
     height: 10%;
-    margin: auto;
+    margin-bottom: 10px ;
     display: flex;
+    position: relative;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 15px;
+    align-items: center;;
 }
 
 .CardCart img {
